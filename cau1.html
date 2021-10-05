@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<Script>
+    // Câu 1:  Xây dựng hàm giải phương trình bậc nhất, biết tham số là các hệ số
+    // nguyên a, b. Hàm trả về nghiệm của phương trình theo tham số đã cho.
+    // Viết chương trình sử dụng hàm vừa xây dựng để giải phương trình bậc nhất
+    // với hệ số a = 5; b = 8
+    function findX(a, b) {
+        let result = ''
+        if (a === 0) {
+            if (b === 0) {
+                result = " phương trình có vô sô nghiệm"
+            } else {
+                result = " phương trình vô nghiệm"
+            }
+        } else {
+            result = -b / a
+        }
+        return result
+    }
+
+    console.log(findX(5, 8))
+
+
+</Script>
+
+</body>
+</html>

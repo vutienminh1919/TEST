@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const vowels = ["a", "e", "i", "o", "u"]
+
+    function countVowels(text) {
+        let count = 0;
+        for (let letter of text.toLowerCase()) {
+            if (vowels.includes(letter)) {
+                count++
+            }
+        }
+        console.log(' The text contains ' + count + ' vowels ')
+        return count
+    }
+
+    countVowels(prompt('enter text you want'))
+</script>
+
+</body>
+</html>
